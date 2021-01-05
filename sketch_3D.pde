@@ -45,7 +45,7 @@ public void draw()
   Cube(cube, new PImage[] {grassSide, grassSide, grassSide, grassSide, grassTop, grassBottom});
   Cube(cubeA, diamond);
   Cube(cubeB, grassBottom);
-  Cube(cubeC, color(0, 0, 150));
+  Sphere(cubeC, color(0, 0, 150));
 
   //Sphere(sphere, color(0, 0, 255));
 
@@ -214,7 +214,7 @@ private void Cube(Transform transform, PImage texture)
 private void Sphere(Transform transform, color colour)
 {
   pushMatrix();
-  
+  stroke(1);
   translate(transform.position.x, transform.position.y, transform.position.z);
   rotateX(transform.rotation.x);
   rotateY(transform.rotation.y);
